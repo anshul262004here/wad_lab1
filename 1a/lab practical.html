@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    /* Custom CSS styles */
+    body {
+        background-color: #f8f9fa;
+    }
+    .sidebar {
+        background-color: #343a40;
+        color: #fff;
+        height: 100vh;
+    }
+    .content {
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 sidebar">
+            <h2 class="mt-3">Admin Dashboard</h2>
+            <ul class="list-unstyled">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">User Management</a></li> <!-- Added -->
+            </ul>
+        </div>
+        <!-- Content -->
+        <div class="col-md-9 content">
+            <div class="row">
+                <!-- Existing Cards -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Orders</h5>
+                            <p class="card-text">150</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Products</h5>
+                            <p class="card-text">50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Customers</h5>
+                            <p class="card-text">100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Revenue</h5>
+                            <p class="card-text">$10,000</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- User Management Section -->
+                <div class="col-md-12 mt-4">
+                    <h4>User Management</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- User management content here -->
+                            <p>You can manage users here.</p>
+                            <a href="#" class="btn btn-primary">Add User</a>
+                            <a href="#" class="btn btn-secondary">Edit User</a>
+                            <a hrefs="#" class="btn btn-danger">Delete User</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Analytics Dashboard Section -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Welcome, Admin!</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Welcome to the admin dashboard of our platform. Here, you have access to
+                                        various tools and functionalities to manage the system efficiently. You can add
+                                        new users, update settings, view analytics, and much more. Feel free to explore
+                                        and utilize the features available to you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Recent Activity</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Here is a summary of recent activities on the platform:</p>
+                                    <ul>
+                                        <li>User John Doe registered on 2024-05-03.</li>
+                                        <li>Product XYZ was added to the catalog on 2024-04-30.</li>
+                                        <li>Settings were updated on 2024-05-02.</li>
+                                        <li>New feature ABC was deployed on 2024-05-01.</li>
+                                    </ul>
+                                    <p>Stay updated with the latest changes and developments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

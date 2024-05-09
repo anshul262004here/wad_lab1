@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Mobile Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Start of First Page -->
+<div data-role="page" id="page1">
+
+  <div data-role="header">
+    <h1>Welcome to My Mobile Website</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This is a simple mobile website using jQuery Mobile. Feel free to explore!</p>
+
+    <!-- Grid -->
+    <div class="ui-grid-b">
+      <div class="ui-block-a"><a href="#panel1" data-role="button">Open Panel</a></div>
+      <div class="ui-block-b"><a href="#dialog1" data-role="button">Open Dialog</a></div>
+      <div class="ui-block-c"><a href="#dialog1" data-role="button">Open fhsdhf</a></div>
+    </div>
+
+    <!-- Panel -->
+    <div data-role="panel" id="panel1" data-display="overlay">
+      <h2>Panel Content</h2>
+      <p>This is a panel. You can put additional content here.</p>
+    </div>
+
+    <!-- Dialog -->
+    <div data-role="dialog" id="dialog1">
+      <div data-role="header">
+        <h1>Dialog</h1>
+      </div>
+      <div data-role="content">
+        <p>This is a dialog. You can add more content inside.</p>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <label for="slider1">Slider:</label>
+    <input type="range" name="slider1" id="slider1" value="50" min="0" max="100">
+
+    <!-- Navigation -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#page1" class="ui-btn-active">Home</a></li>
+        <li><a href="#page2">About Us</a></li>
+        <li><a href="#page3">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Event -->
+    <button id="eventButton">Click Me!</button>
+    <div id="eventOutput"></div>
+
+  </div>cd
+
+  <div data-role="footer">
+    <h4>&copy; 2024 My Mobile Website</h4>
+  </div>
+</div>
+<!-- End of First Page -->
+
+<!-- Start of Second Page -->
+<div data-role="page" id="page2">
+  <div data-role="header">
+    <h1>About Us</h1>
+  </div>
+  <div data-role="content">
+    <p>Welcome to our website! We are a mobile-friendly company.</p>
+    <p>Our mission is to create amazing mobile experiences.</p>
+    <a href="#page1" data-role="button">Go Back</a>
+  </div>
+</div>
+<!-- End of Second Page -->
+
+<!-- Start of Third Page -->
+<div data-role="page" id="page3">
+  <div data-role="header">
+    <h1>Contact Us</h1>
+  </div>
+  <div data-role="content">
+    <p>Feel free to contact us for any inquiries or feedback.</p>
+    <p>Email: info@mobilecompany.com</p>
+    <a href="#page1" data-role="button">Go Back</a>
+  </div>
+  <div></div>
+</div>
+<!-- End of Third Page -->
+
+<script>
+  $(document).on('pagecreate', '#page1', function() {
+    $('#eventButton').on('click', function() {
+      $('#eventOutput').text('Button Clicked!');
+    });
+  });
+</script>
+
+</body>
+</html>
